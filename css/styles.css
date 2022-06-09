@@ -35,16 +35,15 @@ body {
 
     background-color: #fff;
     color: var(--common-text-color);
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
 .container{
     margin: 0 auto;
     width: 1200px;
-   
-    
-  
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -140,10 +139,7 @@ body {
     
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-left: 148px;
-    padding-right: 148px;
     background-color: var(--body-dark-color);  
-
 }
 
 .hero-title {
@@ -196,8 +192,10 @@ body {
     margin-bottom: 50px;
  }
 .filter-item{
-    margin-left: 8px;
-        
+    margin-left: 8px;      
+}
+.filter-item:first-child{
+    margin-left: 0;
 }
 
 .filter-button {
@@ -205,7 +203,7 @@ body {
     padding: 6px 22px 6px 22px;
     white-space: nowrap;
     border-radius: 4px;
-    height: 38px;
+    border-color: transparent;
     vertical-align: text-top;
 
     font-family: inherit;
@@ -229,8 +227,8 @@ body {
 /* -------------------------------------------PROJECTS LIST PORTFOLIO PAGE----------------------------------------------------------*/
 
 .portfolio{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-list{
@@ -259,18 +257,29 @@ body {
 }
 
 .portfolio-section{
+    display:block;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px; 
+    padding-right: 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left:1px solid #EEEEEE;
 }
 
-.portfolio-list-title{   
+.portfolio-list-title{  
+
+    font-family: 'Roboto';
     color: var(--title-text-color);
+   
     font-weight: 700;
+   
+   
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+
 }
 
 .text-about{ 
@@ -305,7 +314,9 @@ body {
 }
 
 .features{
-    padding: 94px 215px 0px 215px;
+     
+    padding-top: 94px;
+    padding-bottom: 0;
 }
 
 .features-about{
@@ -324,10 +335,11 @@ body {
     margin-bottom: 0;
     width: 270px;
     margin-right: var(--typical-margin);
+     
 }
 
 .features-list-item:last-child {
-    margin-left:0;
+    margin-right:0;
 }
 
 .features-title{ 
@@ -338,12 +350,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+     
 }
 
 /* -------------------------------------------WAT WE DO-------------------------------------------------------------------------*/
 
 .wat-we-do{
-    padding:  94px 215px ;
+    padding-top:  94px ;
+    padding-bottom: 94px;
 }
 
 .wat-we-do-title {
@@ -367,17 +381,14 @@ body {
     margin-right: var(--typical-margin);
 }
 
-.wat-we-do-list:last-child{
-    margin-right: 0;
-}
-
 .wat-we-do-item:last-child{
   margin-right: 0;
 }
 /* -------------------------------------------TEAM------------------------------------------------------------------------*/
 
 .team {
-    padding: 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     background-color: #F5F4FA;
     text-align: center;
@@ -389,12 +400,16 @@ body {
 
 .team-item { 
     width: 270px;
-    margin-right: var(--typical-margin);    
+    margin-right: var(--typical-margin);  
+    background: #fff;
+    border-radius: 0px 0px 4px 4px;
+    
+}
+.team-item:last-child{
+    margin-right:0;
+    
 }
 
-.team-list:last-child {
-    margin-right: 0;
-}
 
 .team-title,
 .team-title-lower {
@@ -414,8 +429,8 @@ body {
 }
 
 .team-card{
-margin-top: var(--typical-margin);
-margin-bottom: var(--typical-margin);
+    padding-top: var(--typical-margin);
+    padding-bottom: var(--typical-margin);
 }
 .team-title-lower {
    
@@ -439,7 +454,8 @@ margin-bottom: var(--typical-margin);
 /* -------------------------------------------FOUTER------------------------------------------------------------------------*/
 .footer{
 
-    padding: 60px 60px 60px 154px;
+    padding-top: 60px ;
+    padding-bottom: 60px;
     background-color: var(--body-dark-color);
 }
 
