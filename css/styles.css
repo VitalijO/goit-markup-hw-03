@@ -35,7 +35,7 @@ body {
 
     background-color: #fff;
     color: var(--common-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' , sans-serif;
     text-decoration: none;
 }
 
@@ -51,8 +51,7 @@ body {
 /* -------------------------------------------LOGO--------------------------------------------------------------------------*/
 
 .logo {
-    margin-right: 93px;
-
+    margin-right: 94px;
     text-decoration: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -84,13 +83,16 @@ body {
     align-items:center;
 }
 
-
 .menu-item{
     display: flex;
     justify-content: flex-start;
     margin-right: 50px;
-
 }
+
+.menu-item:last-child{
+    margin-right: 0;
+}
+
 .menu,
 .auth{   
     font-weight: 500;
@@ -105,6 +107,15 @@ body {
 .auth-item{
     margin-right: 50px;
 }
+.auth-item:last-child{
+    margin-right: 0;
+}
+
+.auth-link,
+.menu-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .auth-link {
     text-decoration: none;
@@ -114,10 +125,8 @@ body {
     margin-right: 0;
 }
 
+
 .menu-link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  
     text-decoration: var(--accent-color);
     color: var(--title-text-color);  
 }
@@ -155,14 +164,14 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     color:#fff;
-    text-transform: uppercase;
+    text-transform:uppercase;
+    text-align: center;
     
 }
 
 .hero-btn{ 
-    display: block;
+    display: flex;
     width: 200px;
-   
     padding: 10px 32px;
     white-space: nowrap;
     margin-right: auto;
@@ -177,6 +186,10 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    
+    align-items: center;
+    text-align: center;
+    
 }
 
 .hero-btn:hover, 
@@ -268,13 +281,9 @@ body {
 }
 
 .portfolio-list-title{  
-
-    font-family: 'Roboto';
     color: var(--title-text-color);
    
     font-weight: 700;
-   
-   
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -320,7 +329,7 @@ body {
 }
 
 .features-about{
-     font-size: 14px;
+    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--common-text-color);
@@ -426,6 +435,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
 }
 
 .team-card{
@@ -435,14 +445,14 @@ body {
 .team-title-lower {
    
     margin-bottom: 10px;
-
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .team-profession {
-   
+    text-align: center;
     font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -453,7 +463,6 @@ body {
 
 /* -------------------------------------------FOUTER------------------------------------------------------------------------*/
 .footer{
-
     padding-top: 60px ;
     padding-bottom: 60px;
     background-color: var(--body-dark-color);
@@ -461,6 +470,7 @@ body {
 
 .footer .logo {
     display: inline-block;
+    margin-right: 0;
     margin-bottom: 20px;
     color: #fff;
 }  
